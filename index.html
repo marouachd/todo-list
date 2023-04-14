@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./js/main.js" defer>
+    </script>
+</head>
+
+<body>
+    <div class="todo-container">
+        <form id="add-form">
+            <input type="text" placeholder="New TODO......." id="todo-input">
+            <button type="submit" id="todo-btn">ADD+</button>
+        </form>
+
+        <div class="boxes-container">
+            <div class="box" id="to-do">
+                <h3 class="heading">TODO</h3>
+
+                <div draggable="true" class="div">
+                    <p class="task"> Learning HTML</p>
+                    <button class="remove">X</button>
+                </div>
+
+                <div draggable="true" class="div">
+                    <p class="task"> Learning JS </p>
+                    <button class="remove">X</button>
+                </div>
+
+                <div draggable="true" class="div">
+                    <p class="task"> Learning JAVA </p>
+                    <button class="remove">X</button>
+                </div>
+
+                <div draggable="true" class="div">
+                    <p class="task"> Learning Vue </p>
+                    <button class="remove">X</button>
+                </div>
+
+                <div draggable="true" class="div">
+                    <p class="task" draggable="true"> Learning CSS </p>
+                    <button class="remove">X</button>
+                </div>
+
+            </div>
+
+            <div class="box" id="doing">
+                <h3 class="heading">DOING</h3>
+
+                <div draggable="true" class="div">
+                    <p class="task"> Project vue front </p>
+                    <button class="remove">X</button>
+                </div>
+
+                <div draggable="true" class="div">
+                    <p class="task"> Project countries back </p>
+                    <button class="remove">X</button>
+                </div>
+
+
+            </div>
+
+            <div class="box" id="done">
+                <h3 class="heading">DONE</h3>
+
+                <div draggable="true" class="div">
+                    <p class="task"> Project eventParadise front </p>
+                    <button class="remove">X</button>
+                </div>
+
+                <div draggable="true" class="div">
+                    <p class="task"> Project eventParadise back </p>
+                    <button class="remove">X</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
